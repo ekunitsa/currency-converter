@@ -1,0 +1,22 @@
+@tailwind base
+@tailwind components
+@tailwind utilities
+
+.svg-logo
+  width: 40px
+  margin-right: 20px
+  path
+    fill: white
+
+.listTable
+  thead
+    border-bottom: 1px solid black
+  tr
+    &:nth-child(even)
+      background-color: #fafafa
+    th
+      text-align: left
+    th, td
+      padding: 10px 15px
+      &:first-child
+        width: 50%
