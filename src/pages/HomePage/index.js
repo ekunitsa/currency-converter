@@ -58,7 +58,7 @@ function HomePage() {
           })
           .catch((e) => {
             setTimerStatus(false)
-            setResult({error: `Can\'t find this currency. Error: ${e}`})
+            setResult({error: `Can't find this currency. Error: ${e}`})
           });
       }
     } else {

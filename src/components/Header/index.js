@@ -1,3 +1,4 @@
+import React from "react";
 import Menu from "../Menu";
 import {ReactComponent as Logo} from './img/logo.svg';
 import PropTypes from "prop-types";

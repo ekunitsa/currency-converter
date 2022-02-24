@@ -13,7 +13,6 @@ function ListPage() {
   const dispatch = useDispatch();
 
   const handleSubmit = (data) => {
-    console.log(data)
     const { text } = data;
     const regexp = new RegExp('^\\w{3}$', 'mi');
 
@@ -39,7 +38,7 @@ function ListPage() {
         })
         .catch((e) => {
           setTimerStatus(false)
-          setResult({error: `Can\'t find this currency. Error: ${e}`})
+          setResult({error: `Can't find this currency. Error: ${e}`})
         });
     } else {
       setTimerStatus(false)
