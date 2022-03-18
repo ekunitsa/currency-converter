@@ -28,14 +28,15 @@ function HomePage() {
         setTimerStatus(false)
         setResult({error: 'The value can\'t be minus or zero'})
       } else {
-        fetch(`https://freecurrencyapi.net/api/v2/latest?apikey=${process.env.REACT_APP_API_FREECURRENCYAPI}&base_currency=${baseCurrency}`)
+        fetch(`https://api.currencyapi.com/v3/latest?apikey=${process.env.REACT_APP_API_FREECURRENCYAPI}&base_currency=${baseCurrency}`)
           .then(res => res.json())
           .then(data => {
+            console.log(data.data.USD.value)
             if (data.too_many_requests) {
               throw data.too_many_requests
             }
 
-            const valueConvertTo = data.data[currencyConvertTo]
+            const valueConvertTo = data.data[currencyConvertTo].value
 
             if (valueConvertTo === undefined) {
               setTimerStatus(false)

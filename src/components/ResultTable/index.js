@@ -27,7 +27,7 @@ function ResultTable({data}) {
         {result.map((item) => (
           <tr key={item.code}>
             <td>{item.code}</td>
-            <td>{item.value.toFixed(4)}</td>
+            <td>{Number(item.value.value).toFixed(4)}</td>
           </tr>
         ))}
         </tbody>

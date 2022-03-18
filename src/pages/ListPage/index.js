@@ -17,10 +17,9 @@ function ListPage() {
     const regexp = new RegExp('^\\w{3}$', 'mi');
 
     if (regexp.test(text)) {
-      fetch(`https://freecurrencyapi.net/api/v2/latest?apikey=${process.env.REACT_APP_API_FREECURRENCYAPI}&base_currency=${text}`)
+      fetch(`https://api.currencyapi.com/v3/latest?apikey=${process.env.REACT_APP_API_FREECURRENCYAPI}&base_currency=${text}`)
         .then(res => res.json())
         .then(data => {
-
           if (data.too_many_requests) {
             throw data.too_many_requests
           } else {

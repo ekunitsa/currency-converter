@@ -3,7 +3,6 @@ import { render, unmountComponentAtNode } from "react-dom";
 import { act } from "react-dom/test-utils";
 
 import ResultString from "./index";
-import Footer from "../Footer";
 
 let container = null;
 
