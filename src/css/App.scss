@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.svg-logo {
+    margin-right: 20px;
+    width: 40px;
+
+    path {
+        fill: white;
+    }
+}
+
+.listTable {
+    thead {
+        border-bottom: 1px solid black;
+    }
+
+    tr {
+        th {
+            text-align: left;
+        }
+
+        th, td {
+            padding: 10px 15px;
+
+            &::first-child {
+                width: 50%;
+            }
+        }
+
+        &:nth-child(even) {
+            background-color: #fafafa;
+        }
+    }
+}
