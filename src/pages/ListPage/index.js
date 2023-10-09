@@ -47,10 +47,10 @@ function ListPage() {
 
     return (
         <>
-            <Form btnText="Get list" label="Base currency code. Example: USD" onSubmit={ handleSubmit } id="tableForm" />
-            <Timer status={ timerStatus } />
+            <Form btnText="Get list" label="Base currency code. Example: USD" onSubmit={handleSubmit} id="tableForm" />
+            <Timer status={timerStatus} />
 
-            { result?.error ? <Error msg={ result.error } /> : <ResultTable data={ result } /> }
+            {result?.error ? <Error msg={result.error} /> : <ResultTable data={result} />}
         </>
     );
 }

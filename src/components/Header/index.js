@@ -15,7 +15,7 @@ function Header({ menu }) {
                         </span>
                     </div>
                     <div className="flex justify-center sm:block">
-                        <Menu data={ menu } />
+                        <Menu data={menu} />
                     </div>
                 </div>
             </div>

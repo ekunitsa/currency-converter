@@ -30,29 +30,29 @@ function Form({ btnText, label, placeholder, onSubmit, id }) {
     }
 
     return (
-    <form className="w-full max-w-2xl m-auto" id={ id } onSubmit={ handleSubmit }>
+    <form className="w-full max-w-2xl m-auto" id={id} onSubmit={handleSubmit}>
         <div className="flex flex-wrap -mx-3 mb-6">
             <div className="w-full px-3 sm:w-1/2">
                 <label
                     className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
                     htmlFor="from"
                 >
-                    { label }
+                    {label}
                 </label>
                 <input
                     className="appearance-none text-base block w-full text-gray-700 border-gray-200 rounded py-3 px-4 border focus:outline-none focus:border-gray-500"
                     id="from"
                     name="text"
                     type="text"
-                    value={ data.text }
-                    onChange={ (e) => handleChange(e) } placeholder={ placeholder }
+                    value={data.text}
+                    onChange={(e) => handleChange(e)} placeholder={placeholder}
                 />
             </div>
             <div className="w-full mt-6 px-3 sm:w-1/2">
                 <input
                     className="bg-transparent text-base w-full hover:bg-orange-500 inline-block text-black hover:text-white font-semibold py-3 px-4 border border-orange-500  hover:border-transparent rounded cursor-pointer"
                     type="submit"
-                    value={ btnText }
+                    value={btnText}
                 />
             </div>
         </div>

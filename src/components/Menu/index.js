@@ -12,11 +12,11 @@ function Menu({ data }) {
         <nav className="text-md">
             {data.map(({ id, link, text }) => (
                 <NavLink
-                    className={({ isActive }) => isActive ? buttonState.active : buttonState.default }
-                    key={ id }
-                    to={ link }
+                    className={({isActive}) => isActive ? buttonState.active : buttonState.default }
+                    key={id}
+                    to={link}
                 >
-                    { text }
+                    {text}
                 </NavLink>
             ))}
         </nav>

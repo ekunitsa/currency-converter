@@ -21,14 +21,14 @@ function App() {
     ];
 
     return (
-        <Router basename={ '/currency' }>
+        <Router basename={'/currency'}>
             <div className="flex flex-col min-h-screen">
-                <Header menu={ menu }/>
+                <Header menu={menu}/>
                 <div className="container mx-auto px-4">
                     <div className="my-10">
                         <Routes>
-                            <Route path="/" element={ <HomePage /> } />
-                            <Route path="/list" element={ <ListPage /> } />
+                            <Route path="/" element={<HomePage />} />
+                            <Route path="/list" element={<ListPage />} />
                         </Routes>
                     </div>
                 </div>

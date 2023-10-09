@@ -26,7 +26,7 @@ function Timer({status}) {
 
     return (
         <div className="w-full max-w-2xl m-auto mb-4">
-            Last update: <b className={ timer >= 30 ? 'text-red-500' : 'text-black' }>{ timer }</b> seconds ago
+            Last update: <b className={timer >= 30 ? 'text-red-500' : 'text-black'}>{timer}</b> seconds ago
         </div>
     );
 }

@@ -69,10 +69,10 @@ function HomePage() {
 
     return (
         <>
-            <Form btnText="Convert!" label="Example: 100 USD in UAH" onSubmit={ handleSubmit } id="stringForm" />
-            <Timer status={ timerStatus }  />
+            <Form btnText="Convert!" label="Example: 100 USD in UAH" onSubmit={handleSubmit} id="stringForm" />
+            <Timer status={timerStatus}  />
 
-            { result?.error ? <Error msg={ result.error } /> : <ResultString number={ result.value } currency={ result.currency } /> }
+            {result?.error ? <Error msg={result.error} /> : <ResultString number={result.value} currency={result.currency} /> }
         </>
     );
 }
